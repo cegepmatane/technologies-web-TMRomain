@@ -1,11 +1,12 @@
 .TopBar {
     overflow: visible;
     background-color: #31395F;
+    padding: 15px;
   }
-  .sticky {
+  .sticky{
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
   }
   .TopBar a:hover {
     background-color: #ddd;
@@ -28,11 +29,12 @@
   .TopBar a.left{
     text-align: left;
     margin-left: 100px;
+    padding: 14px 30px;
     float: left;
   }
   .TopBar a.leftB{
     text-align: left;
-    margin-left: 50px;
+    margin-left: 25px;
     float: left;
   }
   .TopBar img{
@@ -40,6 +42,18 @@
     margin-left: 100px; 
     width: 300px;
   }
+  .TopBar ul
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .TopBar li
+  {
+      display: list-item;
+  }
+  
   .dropdown {
     float: left;
     overflow: hidden;
