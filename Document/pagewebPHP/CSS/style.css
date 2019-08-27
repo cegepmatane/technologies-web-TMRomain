@@ -8,6 +8,10 @@
     top: 0;
     width: 100%;
   }
+  .stickyl{ 
+    bottom: 0;
+    width: 100%;
+  }
   .TopBar a:hover {
     background-color: #ddd;
     color:#31395F;
@@ -101,3 +105,28 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .FootBar {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 2px;
+    background-color: #31395F;
+    color: white;
+    text-align: center;
+  }
+  .FootBar ul {
+   margin:0;
+   padding: 0;
+   text-indent: 0;
+   list-style-type: none;
+}
+.FootBar li {
+  vertical-align: unset;
+}
+.floatright {
+  text-align: right;
+  margin-right: 50px;
+  padding-left: 40px;
+}
