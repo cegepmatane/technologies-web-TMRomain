@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="generale.css">
+  <title>GameDepth</title>
+</head>
+
+<body>
+  <div class="sticky">
+    <div class="TopBar">
+      <br><br><br><br>
+      <img src="Decoration/LogoTemporaire1.png" alt="LogoTemporaire">
+      <a class="left" href="index.html">Accueil</a>
+      <div class="dropdown">
+        <button onclick="location.href='article.html'" class="dropbtn">Articles</button>
+        <ul class="dropdown-content">
+                <li><a href="dev.html">Développeur</a></li>
+                <li><a href="jeux.html">Jeux Vidéo</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+              </ul>
+      </div>
+      <a class="leftB" href="blog.html">Blog</a>
+      <div class="dropdown2">
+        <button onclick="location.href='membre.html'" class="dropbtn2" ><img src="Decoration/LogoConnexion.png" alt="Membre"
+            style="width:30px;height:30px;"></button>
+        <div class="dropdown2-content">
+          <fieldset>
+            <form id="dropdownform">
+              <p><label for="email">Votre email : </label></p>
+              <input type="text" name="email" id="email" placeholder="exemple@exemple.exemple">
+              <p><label for="pswd">Mot de passe: </label></p>
+              <input type="password" id="pass" name="password" minlength="8" required>
+              <div class="aligncenter">
+                <input type="submit" value="Envoyer">
+              </div>
+            </form>
+            <a href="ccompte.html">Crée un compte</a>
+            <a href="forgetmdp.html">Mot de passe oublié</a>
+          </fieldset>
+        </div>
+      </div>
+      <a class="right" href="a_propos.html">À propos</a>
+      <a class="right" href="contact.html">Contact</a>
+      <a class="right" href="forum.html">Forum</a>
+    </div>
+  </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="FormContact">
+        <form id="answers">
+            <fieldset>
+                <legend>Nous contacter :</legend>
+                <p><label for="sujet">Titre de votre sujet :</label>
+                    <input type="text" name="sujet" id="sujet" autofocus></p>
+                <p><label for="email">Votre email : </label>
+                    <input type="text" name="email" id="email2" placeholder="exemple@exemple.exemple"></p>
+                <p><label for="sujettxt">Votre Sujet :</label>
+                    ​<textarea id="sujettxt" rows="4" cols="50"></textarea></p>
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+
+    </div>
+    <div class="stickyl">
+        <div class="FootBar">
+            <div class="floatright">
+                <a href="https://www.facebook.com/"><img src="Decoration/LogoFace.png" alt="Facebook"
+                  style="width:20px;height:20px;"></a>
+
+          <a href="https://twitter.com/"><img src="Decoration/LogoTwitter.png" alt="Twitter"
+                  style="width:20px;height:20px;"></a>
+          <a href="https://github.com/"><img src="Decoration/LogoGit.png" alt="GitHUB"
+                  style="width:20px;height:20px;"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
