@@ -49,9 +49,10 @@
   </div>
     <br><br><br><br><br><br><br><br>
     <div class="FormContact">
-        <form id="answers">
+        <form id="answers" onsubmit="return validerCompte(this);">
             <fieldset>
                 <legend>Crée un Compte :</legend>
+                <div id="erreur"></div>
                 <p><label for="prenom">Votre Prénom :</label>
                     <input type="text" name="prenom" id="prenom" placeholder="Alexis" autofocus></p>
                 <p><label for="date">Date de naissance :</label>
@@ -83,6 +84,7 @@
             </div>
         </div>
     </div>
+    <script src="Scripts/CreateAccount.js"></script>
 </body>
 
 </html>
