@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,7 +8,7 @@
   <title>GameDepth</title>
 </head>
 
-<body>
+<body onload="outFocusEmail();">
   <div class="sticky">
     <div class="TopBar">
       <br><br><br><br>
@@ -49,26 +49,27 @@
   </div>
     <br><br><br><br><br><br><br><br>
     <div class="FormContact">
-        <form id="answers" onsubmit="return validerCompte(this);">
+        <form id="answers" method="post" onsubmit="return validerCompte();" >
             <fieldset>
                 <legend>Crée un Compte :</legend>
                 <div id="erreur"></div>
                 <p><label for="prenom">Votre Prénom :</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Alexis" autofocus></p>
+                    <input type="text"  onclick="turnBlue(this)" onfocusout="unFocus(this)" name="prenom" id="prenom" placeholder="Alexis" autofocus></p>
                 <p><label for="date">Date de naissance :</label>
-                    <input type="date" id="date" name="date"></p>
+                    <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="date" id="date" name="date"></p>
                 <p><img src="Decoration/LogoConnexion.png" alt="Membre" style="width:13px;height:13px;">
                     <label for="pseudo">Votre Pseudo :</label>
-                    <input type="text" name="pseudo" id="pseudo"></p>
+                    <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="pseudo" id="pseudo"></p>
                 <p><img src="Decoration/emailIcon.png" alt="Membre" style="width:13px;height:13px;">
-                    <label for="emailCompte">Votre email : </label>
-                    <input type="text" name="emailCompte" id="emailCompte" placeholder="exemple@exemple.exemple"></p>
+                    <label id="emailComptetxt" for="emailCompte">Votre email : </label>
+                    <input onfocus="onFocusEmail()" onclick="    turnBlue(this)" onfocusout="unFocus(this),outFocusEmail(this)" type="text" name="emailCompte" id="emailCompte" ></p>
                 <p><img src="Decoration/lock.png" alt="Membre" style="width:13px;height:13px;">
                     <label for="passwordcc">Votre mots de passe :</label>
-                    <input type="password" id="passwordcc" name="passwordcc" minlength="8" required></p>
+                    <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="password" id="passwordcc" name="passwordcc" minlength="8" required></p>
                 <br>
                 <p><input type="submit" value="Envoyer"></p>
             </fieldset>
+            <div id="message"></div>
         </form>
     </div>
     <div class="stickyl">
