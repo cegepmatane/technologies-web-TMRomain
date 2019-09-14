@@ -17,15 +17,15 @@
       <div class="dropdown">
         <button onclick="location.href='article.html'" class="dropbtn">Articles</button>
         <ul class="dropdown-content">
-                <li><a href="dev.html">Développeur</a></li>
-                <li><a href="jeux.html">Jeux Vidéo</a></li>
-                <li><a href="histoire.html">Histoire</a></li>
-              </ul>
+          <li><a href="dev.html">Développeur</a></li>
+          <li><a href="jeux.html">Jeux Vidéo</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+        </ul>
       </div>
       <a class="leftB" href="blog.html">Blog</a>
       <div class="dropdown2">
-        <button onclick="location.href='membre.html'" class="dropbtn2" ><img src="Decoration/LogoConnexion.png" alt="Membre"
-            style="width:30px;height:30px;"></button>
+        <button onclick="location.href='membre.html'" class="dropbtn2"><img src="Decoration/LogoConnexion.png"
+            alt="Membre" style="width:30px;height:30px;"></button>
         <div class="dropdown2-content">
           <fieldset>
             <form id="dropdownform">
@@ -47,45 +47,48 @@
       <a class="right" href="forum.html">Forum</a>
     </div>
   </div>
-    <br><br><br><br><br><br><br><br>
-    <div class="FormContact">
-        <form id="answers" method="post" onsubmit="return validerCompte();" >
-            <fieldset>
-                <legend>Crée un Compte :</legend>
-                <div id="erreur"></div>
-                <p><label for="prenom">Votre Prénom :</label>
-                    <input type="text"  onclick="turnBlue(this)" onfocusout="unFocus(this)" name="prenom" id="prenom" placeholder="Alexis" autofocus></p>
-                <p><label for="date">Date de naissance :</label>
-                    <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="date" id="date" name="date"></p>
-                <p><img src="Decoration/LogoConnexion.png" alt="Membre" style="width:13px;height:13px;">
-                    <label for="pseudo">Votre Pseudo :</label>
-                    <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="pseudo" id="pseudo"></p>
-                <p><img src="Decoration/emailIcon.png" alt="Membre" style="width:13px;height:13px;">
-                    <label id="emailComptetxt" for="emailCompte">Votre email : </label>
-                    <input onfocus="onFocusEmail()" onclick="    turnBlue(this)" onfocusout="unFocus(this),outFocusEmail(this)" type="text" name="emailCompte" id="emailCompte" ></p>
-                <p><img src="Decoration/lock.png" alt="Membre" style="width:13px;height:13px;">
-                    <label for="passwordcc">Votre mots de passe :</label>
-                    <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="password" id="passwordcc" name="passwordcc" minlength="8" required></p>
-                <br>
-                <p><input type="submit" value="Envoyer"></p>
-            </fieldset>
-            <div id="message"></div>
-        </form>
-    </div>
-    <div class="stickyl">
-        <div class="FootBar">
-            <div class="floatright">
-                <a href="https://www.facebook.com/"><img src="Decoration/LogoFace.png" alt="Facebook"
-                        style="width:20px;height:20px;"></a>
+  <br><br><br><br><br><br><br><br>
+  <div class="FormContact">
+    <form id="answers" method="get" onsubmit="return validerCompte();" action="connexion.html">
+      <fieldset>
+        <legend>Crée un Compte :</legend>
+        <div id="erreur"></div>
+        <p><label for="prenom">Votre Prénom :</label>
+          <input type="text" onclick="turnBlue(this)" onfocusout="unFocus(this)" name="prenom" id="prenom"
+            placeholder="Alexis" autofocus></p>
+        <p><label for="date">Date de naissance :</label>
+          <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="date" id="date" name="date"></p>
+        <p><img src="Decoration/LogoConnexion.png" alt="Membre" style="width:13px;height:13px;">
+          <label for="pseudo">Votre Pseudo :</label>
+          <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="pseudo" id="pseudo"></p>
+        <p><img src="Decoration/emailIcon.png" alt="Membre" style="width:13px;height:13px;">
+          <label id="emailComptetxt" for="emailCompte">Votre email : </label>
+          <input onfocus="onFocusEmail()" onclick="    turnBlue(this)" onfocusout="unFocus(this),outFocusEmail(this)"
+            type="text" name="emailCompte" id="emailCompte"></p>
+        <p><img src="Decoration/lock.png" alt="Membre" style="width:13px;height:13px;">
+          <label for="passwordcc">Votre mots de passe :</label>
+          <input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="password" id="passwordcc" name="passwordcc"
+            minlength="8" required></p>
+        <br>
+        <p><input type="submit" value="Envoyer"></p>
+      </fieldset>
+      <div id="message"></div>
+    </form>
+  </div>
+  <div class="stickyl">
+    <div class="FootBar">
+      <div class="floatright">
+        <a href="https://www.facebook.com/"><img src="Decoration/LogoFace.png" alt="Facebook"
+            style="width:20px;height:20px;"></a>
 
-                <a href="https://twitter.com/"><img src="Decoration/LogoTwitter.png" alt="Twitter"
-                        style="width:20px;height:20px;"></a>
-                <a href="https://github.com/"><img src="Decoration/LogoGit.png" alt="GitHUB"
-                        style="width:20px;height:20px;"></a>
-            </div>
-        </div>
+        <a href="https://twitter.com/"><img src="Decoration/LogoTwitter.png" alt="Twitter"
+            style="width:20px;height:20px;"></a>
+        <a href="https://github.com/"><img src="Decoration/LogoGit.png" alt="GitHUB"
+            style="width:20px;height:20px;"></a>
+      </div>
     </div>
-    <script src="Scripts/CreateAccount.js"></script>
+  </div>
+  <script src="Scripts/CreateAccount.js"></script>
 </body>
 
 </html>

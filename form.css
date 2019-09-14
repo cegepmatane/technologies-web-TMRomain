@@ -1,0 +1,61 @@
+.FormContact {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.FormContact textarea {
+  resize: none;
+}
+
+.FormContact fieldset {
+  margin-left: 35%;
+  width: 400px;
+  background-color: #31395F;
+}
+
+.FormContact Input {
+  margin-left: 20%;
+  width: 230px;
+}
+
+.FormContact legend {
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: #31395F;
+}
+
+.FormContact label {
+  color: white;
+  font-size: 20px;
+}
+
+#answers input[type="text"],
+input[type="submit"],
+input[type="password"],
+input[type="date"] {
+  display: block;
+}
+
+#dropdownform input[type="text"] {
+  text-align: center;
+  display: block;
+}
+
+.FormContact input[type="submit"] {
+  color: white;
+  background-color: #31395F;
+  height: 30px;
+  border: 2px solid white;
+}
+
+.FormContact input[type="submit"]:hover {
+  background-color: #ddd;
+  color: #31395F;
+  height: 30px;
+}
+#message {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}

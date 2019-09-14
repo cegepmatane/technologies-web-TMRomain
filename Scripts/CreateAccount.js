@@ -66,6 +66,9 @@ function validerCourriel(email)
             message.innerHTML = "*Mauvais format d'email";
             message.style.color ="red";
             return false;
+        }else{
+            window.location.href = "connexion.html";
+            return true;
         }
     }
  

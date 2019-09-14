@@ -1,258 +1,241 @@
-*{
-  margin:0px;
+
+@import url("form.css");
+* {
+  margin: 0px;
   padding: 0;
 }
+
 .TopBar {
-    overflow: visible;
-    background-color: #31395F;
-    padding: 15px;
-  }
-  .sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .stickyl{ 
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .TopBar a:hover {
-    background-color: #ddd;
-    color:#31395F;
-    cursor: pointer;
-    }
-  .TopBar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .article a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .TopBar a.right{
-    text-align: right;
-    margin-right: 25px;
-    float: right;
-  }
-  .TopBar a.left{
-    text-align: left;
-    margin-left: 100px;
-    padding: 14px 30px;
-    float: left;
-  }
-  .TopBar a.leftB{
-    text-align: left;
-    margin-left: 25px;
-    float: left;
-  }
-  .TopBar img{
-    text-align: center;
-    margin-left: 100px; 
-    width: 300px;
-  }
-  .TopBar ul
-  {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .TopBar li
-  {
-      display: list-item;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  .dropdown2 {
-    float: right;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 60px;
-    text-align: right;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    cursor: pointer;
-  }
-  .dropdown2 .dropbtn2 {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 60px;
-    text-align: right;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    cursor: pointer;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #f9f9f9;
-    color:#31395F;
-  }
-  .dropdown2:hover .dropbtn2 {
-    background-color: #f9f9f9;
-    color:#31395F;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: -10px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown2-content {
-    display: none;
-    position: -10px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  .dropdown2-content input[type="submit"]{
-    color :white;
-    background-color: #31395F;
-    height: 30px;
-    border: 2px solid white;
-  }
-  .dropdown2-content input{
-    margin: 10px;
-    padding: 0px 30px;
-    display: block;
-  }
-  .aligncenter{
-    display: inline-block;
-    text-align: center;
-  }
-  .dropdown2-content label{
-    text-align: center;
-    display: block;
-  }
-  .dropdown2-content   input[type="submit"]:hover{
-    background-color: #ddd;
-    color:#31395F;
-    height: 30px;
-  }
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown2-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown2-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown2:hover .dropdown2-content {
-    display: block;
-  }
-  .FootBar {
-    position: fixed  ;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    padding: 25px 2px;
-    background-color: #31395F;
-    color: white;
-    text-align: center;
-  }
-  .FootBar ul {
-   margin:0;
-   padding: 0;
-   text-indent: 0;
-   list-style-type: none;
+  overflow: visible;
+  background-color: #31395F;
+  padding: 15px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.stickyl {
+  bottom: 0;
+  width: 100%;
+}
+
+.TopBar a:hover {
+  background-color: #ddd;
+  color: #31395F;
+  cursor: pointer;
+}
+
+.TopBar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.article a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.TopBar a.right {
+  text-align: right;
+  margin-right: 25px;
+  float: right;
+}
+
+.TopBar a.left {
+  text-align: left;
+  margin-left: 100px;
+  padding: 14px 30px;
+  float: left;
+}
+
+.TopBar a.leftB {
+  text-align: left;
+  margin-left: 25px;
+  float: left;
+}
+
+.TopBar img {
+  text-align: center;
+  margin-left: 100px;
+  width: 300px;
+}
+
+.TopBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.TopBar li {
+  display: list-item;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown2 {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 60px;
+  text-align: right;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown2 .dropbtn2 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 60px;
+  text-align: right;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+  color: #31395F;
+}
+
+.dropdown2:hover .dropbtn2 {
+  background-color: #f9f9f9;
+  color: #31395F;
+}
+
+.dropdown-content {
+  display: none;
+  position: -10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown2-content {
+  display: none;
+  position: -10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown2-content input[type="submit"] {
+  color: white;
+  background-color: #31395F;
+  height: 30px;
+  border: 2px solid white;
+}
+
+.dropdown2-content input {
+  margin: 10px;
+  padding: 0px 30px;
+  display: block;
+}
+
+.aligncenter {
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown2-content label {
+  text-align: center;
+  display: block;
+}
+
+.dropdown2-content input[type="submit"]:hover {
+  background-color: #ddd;
+  color: #31395F;
+  height: 30px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown2-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown2-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown2:hover .dropdown2-content {
+  display: block;
+}
+
+.FootBar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  padding: 25px 2px;
+  background-color: #31395F;
+  color: white;
+  text-align: center;
+}
+
+.FootBar ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
 .FootBar li {
   vertical-align: unset;
 }
+
 .floatright {
   text-align: right;
   margin-right: 50px;
   padding-left: 40px;
 }
-.FormContact{
-  text-align: center;
-  margin-top: 200px;
-}
-.FormContact textarea {
-  resize: none;
-}
-.FormContact fieldset{
-  margin-left: 35%;
-  width:400px ;
-  background-color:#31395F;
-}
-.FormContact Input{
-  margin-left: 20%;
-  width:230px ;
-}
-.FormContact legend{
-  color: white;
-  font-size: 30px; 
-  border-radius: 5px;
-  background-color: #31395F;
-}
-.FormContact label{
-  color :white;
-  font-size: 20px;
-}
-#answers input[type="text"],input[type="submit"],input[type="password"],input[type="date"] {
-  display: block;
-}
-#dropdownform input[type="text"]{
-  text-align: center;
-  display: block;
-}
-.FormContact input[type="submit"]{
-  color :white;
-  background-color: #31395F;
-  height: 30px;
-  border: 2px solid white;
-}
-.FormContact input[type="submit"]:hover{
-  background-color: #ddd;
-  color:#31395F;
-  height: 30px;
-}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -260,12 +243,13 @@
 }
 
 .card {
-   flex: 0 1 24%;
+  flex: 0 1 24%;
 }
+
 .centered p {
-  background-color:#31395F;
+  background-color: #31395F;
   color: white;
   margin-left: 60px;
-  margin-right : 150px;
+  margin-right: 150px;
   text-align: center;
 }

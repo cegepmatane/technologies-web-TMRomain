@@ -8,7 +8,7 @@
   <title>GameDepth</title>
 </head>
 
-<body>
+<body onload="outFocusEmail();">
   <div class="sticky">
     <div class="TopBar">
       <br><br><br><br>
@@ -49,19 +49,19 @@
   </div>
     <br><br><br><br><br><br><br><br>
     <div class="FormContact">
-        <form id="answers">
+        <form id="answers" onsubmit="return validerCompte();">
             <fieldset>
                 <legend>Nous contacter :</legend>
                 <p><label for="sujet">Titre de votre sujet :</label>
                     <input type="text" name="sujet" id="sujet" autofocus></p>
                 <p><label for="email">Votre email : </label>
-                    <input type="text" name="email" id="email2" placeholder="exemple@exemple.exemple"></p>
-                <p><label for="sujettxt">Votre Sujet :</label>
+                    <input type="text" onfocus="onFocusEmail()" onfocusout="outFocusEmail(this)" name="emailCompte" id="emailCompte" placeholder="exemple@exemple.exemple"></p>
+                <p><label for="sujettxt">Votre Sujet :</label>  
                     ​<textarea id="sujettxt" rows="4" cols="50"></textarea></p>
                 <input type="submit" value="Envoyer">
             </fieldset>
         </form>
-
+        <div id="message"></div>
     </div>
     <div class="stickyl">
         <div class="FootBar">
@@ -76,6 +76,7 @@
             </div>
         </div>
     </div>
+    <script src="Scripts/CreateAccount.js"></script>
 </body>
 
 </html>
