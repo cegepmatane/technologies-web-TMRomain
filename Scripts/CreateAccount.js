@@ -1,4 +1,5 @@
 var email ;
+//Recuperer les variable de l'HTML
 function onLoad()
 {
     if(email == null)
@@ -7,6 +8,7 @@ function onLoad()
     }
 }
 
+//Fonction qui test les condition pour valider le compte
 function validerCompte(formulaire){
     var message = document.getElementById("message");
     if(email == null)
@@ -21,9 +23,9 @@ function validerCompte(formulaire){
     }
     return false;
 }
-function turnBlue(input){
-    input.style.borderColor = "blue";
-}
+
+
+//Vide la valeur de l'email si le champ est egale a "exemple@exemple.exemple"
 function onFocusEmail(input) {
     if(email == null)
     {
@@ -34,6 +36,8 @@ function onFocusEmail(input) {
     email.value = "";
     }
 }
+
+//Change la valeur de l'email si vide en "exemple@exemple.exemple"
 function outFocusEmail(formulaire)
 {
     if(email == null)
@@ -46,9 +50,15 @@ function outFocusEmail(formulaire)
     }
     
 }
+//Change les border des input en Bleu
+function turnBlue(input){
+    input.style.borderColor = "blue";
+}
+//Enléve le border blue effectuer dans la fonction turnBlue()
 function unFocus(input){
     input.style.borderColor = "grey";
 }
+//Verifie plusieur condition et return true si elle sont toute Valide
 function validerCourriel(email)
 {
     if(email.value == "" || email.value == "exemple@exemple.exemple")
