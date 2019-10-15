@@ -8,7 +8,7 @@
   <title>GameDepth</title>
 </head>
 
-<body id="index">
+<body>
   <nav class="sticky">
     <div class="TopBar">
       <img class="logo" src="Decoration/LogoTemporaire1.png" alt="LogoTemporaire">
@@ -16,7 +16,7 @@
         <li class="topNav"><a class="topLink" href="index.html"> Accueil</a></li>
         <li class="topNav"><a href="article.html" class="topLink">Articles</a>
           <ul class="dropdown">
-            <li><a class="topLink" href="dev.html">Développeur</a></li>
+            <li><a class="topLink" href="dev.html">Programmeur</a></li>
             <li><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
             <li> <a class="topLink" href="histoire.html">Histoire</a></li>
           </ul>
@@ -47,16 +47,32 @@
       </ul>
     </div>
   </nav>
-  <br><br><br><br>
-  <div class="center">
-    <h1>Le site qui traite de tous les domaines du jeu vidéo</h1>
-    <p>Et bien plus sur notre forum lorsque vous êtes connecter</p>
-    <a href="ccompte.html" class="button">Connectez-Vous</a>
-
-    <br><br><br><br>
-    <h1>Temps avant l'E3 2019 </h1>
-    <p id="countdown"></p>
-  </div>
+  <br><br><br><br><br><br>
+  <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Programmeur de jeux vidéo</h2>
+          <img class="imgArticle" src="Decoration/ProgBanner.jpg" alt="Prog">
+          <p>Imaginez pouvoir créer le moteur de jeux vidéo qui prennent vie grâce à vos instructions.  Carrière passionnante, la programmation de jeux vidéo est de plus en plus en demande</p>
+          <a class="button" href="dev.html">Voir plus d'article</a>
+        </div>
+        <div class="card">
+            <h2>Jeux vidéo</h2>
+            <img class="imgArticle" src="Decoration/WitcherBanner.jpg" alt="Prog">
+            <p>Un jeu vidéo est un jeu électronique doté d'une interface utilisateur permettant une interaction humaine ludique en générant un retour visuel sur un dispositif vidéo. Le joueur de jeu vidéo dispose de périphériques pour agir sur le jeu et percevoir les conséquences de ses actes sur un environnement virtuel. Le mot « vidéo » dans le jeu vidéo fait traditionnellement référence à un dispositif d'affichage de trame, mais, à la suite de la vulgarisation du terme, il implique désormais tout type de dispositif d'affichage.</p>
+            <a class="button" href="jeux.html">Voir plus d'article</a>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+            <h2>Programmeur de jeux vidéo</h2>
+            <img class="imgArticle" src="Decoration/histoireBanner.jpg" alt="Prog">
+            <p>L'histoire du jeu vidéo débute dans les années 1940, où l'idée du jeu vidéo naît au sein des universités lors de recherches sur l'informatique. Les jeux vidéo ne se font connaitre du grand public qu'à partir des années 1970 avec la commercialisation des premières bornes d'arcade ainsi que les consoles de jeu vidéo, pouvant faire tourner une dizaine de jeux simplistes. Le jeu vidéo devient alors une industrie, évoluant avec la technologie et marqué par un krach en 1983, à la suite de l'inondation des modèles sur le marché après le boom des années 1970.</p>
+            <a class="button" href="histoire.html">Voir plus d'article</a>
+        </div>
+      </div>
+    </div>
+  <br><br><br><br><br>
   <div class="stickyl">
     <div class="FootBar">
       <div class="floatright">
@@ -71,6 +87,8 @@
   </div>
   <script src="Scripts/Nav.js"></script>
   <script src="Scripts/Footer.js"></script>
+  <script src="Scripts/ArticleSlide.js"></script>
+  <script src="Scripts/Article.js"></script>
 </body>
 
 </html>

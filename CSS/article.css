@@ -326,3 +326,66 @@ h4 {
     width: 100%;
   }
 }
+
+/* Colone de gauche */
+.leftcolumn {   
+  float: left;
+  width: 60%;
+  margin-left: 50px;
+}
+
+/* Colone de droitre */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  margin-right: 50px;
+}
+.rightcolumn .card{
+padding-bottom: 80%;
+}
+
+/*Image*/
+.imgArticle {
+  width: 95%;
+  height:  250px;
+  padding: 20px;
+}
+
+/* Contour   */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  outline: black solid 5px;
+}
+
+/*Enlever le float apres les colone */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card .button {
+  background-color: #36406F;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Adapt au mobile a partir de 800 pixel */
+@media screen and (max-width: 800px) {
+  .leftcolumn {   
+    width: 100%;
+    margin-left:0px;
+  }
+  .rightcolumn{   
+    float: left;
+    width: 100%;
+  }
+}
