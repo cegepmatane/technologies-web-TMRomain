@@ -1,3 +1,4 @@
+let footer = document.getElementById("footer");
 function plusGrand(button){
     let image = button.firstElementChild;
     image.style.transition  = 1 + "s";
