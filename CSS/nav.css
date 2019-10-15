@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
 #ul {
   position: relative;
-  background: #31395F;
+  background-image: linear-gradient(to bottom right, #31395F, #495baa);
     list-style: none;
     margin: 0;
     padding-left: 0;
 }
+/* .container{
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row ;
+} */
 ul img{
   float: left;
   width: auto;
@@ -13,30 +19,27 @@ ul img{
 }
 li {
     color: #fff;
-    background:#31395F;
+    font-family: 'Grenze', serif;
+    font-size: 15px;
     display: block;
     float: left;
     padding: 1rem;
     position: relative;
     text-decoration: none;
-  transition-duration: 0.5s;
+    top :0px;
 } 
 
 .topNav{
   padding: 0px;
   margin-left: 2%;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
 }
 .topNavRight{
-  margin:  0px auto;
   text-align: center;
   float: right;
   padding: 0.8%;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
+  background: #4caf50;
 }
 li a {
   display:block;
@@ -45,19 +48,20 @@ li a {
 }
 
 li:hover {
+  transition: 0.5s;
     background: #ddd;
     cursor: pointer;
 }
 
 ul li ul {
-    background: #31395F;
-    visibility: hidden;
+  background: #3D4A85;
+  visibility: hidden;
   opacity: 0;
   min-width: 5rem;
-    position: absolute;
+  position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
-    left: 0;
+  left: 0;
   display: none;
 }
 
@@ -77,6 +81,7 @@ ul li ul li {
 .dropdown{
   z-index: 3;
   margin-top:0px;
+  padding-right: 20px;
 }
 .dropdownRight{
   text-align: center;
@@ -97,3 +102,57 @@ ul li ul li {
   padding:10px 10px 10px 10px;
   display: block;
 }
+.topLink:hover{
+  color: black;
+}
+
+.startRight li {
+  background: #495baa;
+  cursor: default;
+  
+}
+.startRight a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.TopBar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #31395F, #495baa);
+  color: white;
+  text-align: left;
+  z-index: 9000;
+  
+}
+.TopBar .logo {
+  top:0.5%;
+  left: 0.5%  ;
+  position: relative;
+  width: 13%;
+  transition: 0.5s;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+
+}
+
+.ArrowList{
+  font-size: 10px;
+  display: inline;
+}
+li:hover .ArrowList{
+  transition-duration: 1s;
+  opacity: 0;
+}
+.imageRS{
+  width:20px;
+  height:20px;
+  top: 0px;
+  margin-top: 5px;
+}
+
+

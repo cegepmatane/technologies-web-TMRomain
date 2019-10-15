@@ -11,14 +11,14 @@
 <body>
   <nav class="sticky">
     <div class="TopBar">
-        <img class="logo" src="Decoration/LogoTemporaire1.png" alt="LogoTemporaire">
-        <ul>
-            <li class="topNav"><a class="topLink" href="index.html"> Accueil</a></li>
+      <img class="logo" src="Decoration/LogoTemporaire1.png" alt="LogoTemporaire">
+      <ul>
+        <li class="topNav"><a class="topLink" href="index.html"> Accueil</a></li>
         <li class="topNav"><a class="topLink">Articles</a>
           <ul class="dropdown">
-              <li><a class="topLink" href="dev.html">Développeur</a></li>
-              <li><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
-              <li> <a class="topLink" href="histoire.html">Histoire</a></li>
+            <li><a class="topLink" href="dev.html">Développeur</a></li>
+            <li><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
+            <li> <a class="topLink" href="histoire.html">Histoire</a></li>
           </ul>
         </li>
         <li class="topNav"><a class="topLink" href="blog.html">Blog</a></li>
@@ -27,24 +27,26 @@
         <li class="topNav"><a class="topLink" href="a_propos.html">À propos</a></li>
         <li class="topNavRight"><a class="topLink">Connection</a>
           <ul class="startRight">
-              <li><fieldset class="Connection">
-                  <form>
-                      <p><label for="email">Votre email : </label></p>
-                       <input type="text" name="email" id="email" placeholder="exemple@exemple.exemple">
-                      <p><label for="pass">Mot de passe: </label></p>
-                      <input type="password" id="pass" name="pass" minlength="8" required>
-                    <div class="aligncenter">
-                       <input type="submit" value="Envoyer">
-                    </div>
-                  </form>
-                  <p><a href="ccompte.html">Crée un compte</a></p>
-                  <p><a href="forgetmdp.html">Mot de passe oublié</a></p>
-                </fieldset>
-              </li>
-            </ul></li>
+            <li>
+              <fieldset class="Connection">
+                <form>
+                  <p><label for="email">Votre email : </label></p>
+                  <input type="text" name="email" id="email" placeholder="exemple@exemple.exemple">
+                  <p><label for="pass">Mot de passe: </label></p>
+                  <input type="password" id="pass" name="pass" minlength="8" required>
+                  <div class="aligncenter">
+                    <input type="submit" value="Envoyer">
+                  </div>
+                </form>
+                <p><a href="ccompte.html">Crée un compte</a></p>
+                <p><a href="forgetmdp.html">Mot de passe oublié</a></p>
+              </fieldset>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
-    </nav>
+  </nav>
   <br><br><br><br><br><br><br><br>
   <div class="FormContact">
     <form id="answers" method="get" onsubmit="return validerCompte();" action="connexion.html">
@@ -76,16 +78,17 @@
   <div class="stickyl">
     <div class="FootBar">
       <div class="floatright">
-        <a href="https://www.facebook.com/"><img src="Decoration/LogoFace.png" alt="Facebook"
-            style="width:20px;height:20px;"></a>
-
-        <a href="https://twitter.com/"><img src="Decoration/LogoTwitter.png" alt="Twitter"
-            style="width:20px;height:20px;"></a>
-        <a href="https://github.com/"><img src="Decoration/LogoGit.png" alt="GitHUB"
-            style="width:20px;height:20px;"></a>
+        <a href="https://www.facebook.com/" onmouseover="plusGrand(this)" onmouseout="plusPetit(this)"><img
+            class="imageRS" src="Decoration/LogoFace.png" alt="Facebook"></a>
+        <a href="https://twitter.com/" onmouseover="plusGrand(this)" onmouseout="plusPetit(this)"><img class="imageRS"
+            src="Decoration/LogoTwitter.png" alt="Twitter"></a>
+        <a href="https://github.com/" onmouseover="plusGrand(this)" onmouseout="plusPetit(this)"><img class="imageRS"
+            src="Decoration/LogoGit.png" alt="GitHUB"></a>
       </div>
     </div>
   </div>
+  <script src="Scripts/Nav.js"></script>
+  <script src="Scripts/Footer.js"></script>
   <script src="Scripts/CreateAccount.js"></script>
 </body>
 

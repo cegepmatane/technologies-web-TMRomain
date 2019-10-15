@@ -1,0 +1,25 @@
+.simple-table {
+  border: solid 1px #DDEEEE;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  text-align: center;
+}
+.simple-table thead th {
+  background-color: #495baa;
+  border: solid 1px #495baa;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+.simple-table tbody td {
+  border: solid 1px #DDEEEE;
+  padding: 10px;
+}
+.confTitre{
+  background-color: #495baa;
+  border: solid 1px #495baa;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}

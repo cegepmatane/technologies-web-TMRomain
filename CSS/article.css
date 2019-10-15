@@ -1,0 +1,328 @@
+  html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+p {
+	font-size: 1.36rem;
+	font-family: 'Josefin Sans', sans-serif;
+ 
+}
+h4 {
+  margin-top: 0px; 
+  font-size: 2.8rem; 
+  letter-spacing: -.1em; 
+}
+.g-card p { 
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  /* color: white;
+  background-color: #333;*/
+}
+.g-card p, h4, span{
+  color: #fafafa;
+}
+.g-card h4{
+
+  font-size: 26px;
+  position: absolute;
+  bottom: 0px;
+}
+
+
+.g-card {
+  z-index: -1;
+  margin-bottom: 10%;
+  /* background-image: url("decoration/Article1TheWticher.png"); */
+  top: 100px;
+  float: left;
+  margin-left: 8%;
+  position: relative;
+  width: 340px;
+  height: 320px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 20px 30px 50px 1px rgba(0,0,0,.3);
+}
+.g-card img{
+  min-width:105%;
+  min-height:105%;
+  max-width:120%;
+  max-height:120%;
+}
+.publisher 
+ {
+    font-family: 'Josefin Sans', sans-serif;
+	color: #fafafa; 
+	opacity: .8; 
+	font-size: 1.3rem;
+}
+.date {
+  font-family: 'Josefin Sans', sans-serif;
+  opacity: .8; 
+  font-size: 1.3rem;	
+  width: 100%;
+  position: relative;
+}
+.hover-btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    padding-left: 26px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    font-size: 13px
+}
+@media (min-width: 800px) {
+    .hover-btn {
+        font-size:16px;
+        padding-left: 36px
+    }
+}
+/* .hover-btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    background: currentColor;
+    left: 0;
+    width: 20px;
+    top: 50%;
+    margin-top: -1px;
+    transition: transform .3s cubic-bezier(.42,.01,.23,1);
+    transform-origin: left
+}
+.hover-btn:hover::before {
+    transform: scaleX(1.333)
+}
+@media (min-width: 800px) {
+    .hover-btn::before {
+        width:30px
+    }
+} */
+.hover-btn span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.42,.01,.23,1)
+}
+.hover-btn:hover span {
+    transform: translateX(12px)
+}
+@media (min-width: 800px) {
+    .hover-btn:hover span {
+        transform: translateX(18px)
+    }
+}
+@media (max-width: 765px) {
+	.g-card {
+		margin-left: 15%;
+		top: 0;
+		margin-top: 35px;
+  }
+}
+.articleBox:hover .g-card{
+  width: 340px;
+  min-height: 320px;
+}
+.articleBox:hover p{
+  visibility: visible;
+}
+.backColor{
+  text-decoration: none;
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 25%;
+    background-color: #31395F;
+    opacity: 0.9;
+}
+.textbackColor{
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #31395F;
+  opacity: 0;
+  
+}
+.textbackColor p {
+  position: relative;
+  margin-top: 50px;
+  overflow-x:  hidden;
+  overflow-y: hidden;
+  /* Utiliser pour changer la taille du scroll */
+  height: 150px; 
+}
+.articleBox:hover .textbackColor{
+  transition-duration: 0.5s;
+  opacity: 0.8;
+}
+.g-card .hover-btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  margin-left: 20px;
+
+  background: transparent;
+
+  color: inherit;
+  font: inherit;
+
+  line-height: normal;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  -webkit-appearance: none;
+}
+.plus{
+  display: none;
+}
+#countdown{
+  font-size: 20px;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Cacher les image par default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+/* Bouton suivant et precedent*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Bouton suivant a droite */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Au survole change la couleur*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+/* texte des numeros*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Animation image */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* bloqueur Fond */
+.modal {
+  display: none; 
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Image du bloqueur */
+.modal-content {
+  max-width:100%; 
+  height:auto
+}
+
+
+/* Animation zoom sur le bloqueur */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/*bouton fermer du bloqueur*/
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Taille image pour mobile */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

@@ -11,14 +11,14 @@
 <body>
   <nav class="sticky">
     <div class="TopBar">
-        <img class="logo" src="Decoration/LogoTemporaire1.png" alt="LogoTemporaire">
-        <ul>
-            <li class="topNav"><a class="topLink" href="index.html"> Accueil</a></li>
+      <img class="logo" src="Decoration/LogoTemporaire1.png" alt="LogoTemporaire">
+      <ul>
+        <li class="topNav"><a class="topLink" href="index.html"> Accueil</a></li>
         <li class="topNav"><a class="topLink">Articles</a>
           <ul class="dropdown">
-              <li><a class="topLink" href="dev.html">Développeur</a></li>
-              <li><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
-              <li> <a class="topLink" href="histoire.html">Histoire</a></li>
+            <li><a class="topLink" href="dev.html">Développeur</a></li>
+            <li><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
+            <li> <a class="topLink" href="histoire.html">Histoire</a></li>
           </ul>
         </li>
         <li class="topNav"><a class="topLink" href="blog.html">Blog</a></li>
@@ -27,68 +27,126 @@
         <li class="topNav"><a class="topLink" href="a_propos.html">À propos</a></li>
         <li class="topNavRight"><a class="topLink">Connection</a>
           <ul class="startRight">
-              <li><fieldset class="Connection">
-                  <form>
-                      <p><label for="email">Votre email : </label></p>
-                       <input type="text" name="email" id="email" placeholder="exemple@exemple.exemple">
-                      <p><label for="pass">Mot de passe: </label></p>
-                      <input type="password" id="pass" name="pass" minlength="8" required>
-                    <div class="aligncenter">
-                       <input type="submit" value="Envoyer">
-                    </div>
-                  </form>
-                  <p><a href="ccompte.html">Crée un compte</a></p>
-                  <p><a href="forgetmdp.html">Mot de passe oublié</a></p>
-                </fieldset>
-              </li>
-            </ul></li>
+            <li>
+              <fieldset class="Connection">
+                <form>
+                  <p><label for="email">Votre email : </label></p>
+                  <input type="text" name="email" id="email" placeholder="exemple@exemple.exemple">
+                  <p><label for="pass">Mot de passe: </label></p>
+                  <input type="password" id="pass" name="pass" minlength="8" required>
+                  <div class="aligncenter">
+                    <input type="submit" value="Envoyer">
+                  </div>
+                </form>
+                <p><a href="ccompte.html">Crée un compte</a></p>
+                <p><a href="forgetmdp.html">Mot de passe oublié</a></p>
+              </fieldset>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
-    </nav>
-  <br><br><br><br>
+  </nav>
+  <br><br><br><br><br>
   <h1>Jeux :</h1>
-  <br> <br> <br>
-  <div class="g-card">
-      <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
-      <p>Le succès de The Witcher 3 fut une véritable révolution – c’était le premier jeu polonais à égaler les plus gros succès de l’ouest, aussi bien en termes 
-        de revenus financiers que d’accueil critique...</p>
-      <a class="hover-btn" href="articleJeux1.html"><span>Lire plus</span></a>
-    </div>
-        
+  <p id="textUpdate"></p>
+
+  <div class="articleBox">
     <div class="g-card">
-        <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
-        <p>Le succès de The Witcher 3 fut une véritable révolution – c’était le premier jeu polonais à égaler les plus gros succès de l’ouest, aussi bien en termes 
-          de revenus financiers que d’accueil critique...</p>
-        <a class="hover-btn" href="articleJeux1.html"><span>Lire plus</span></a>
+      <img src="decoration/Article1TheWticher.png" alt="ImageArticle">
+      <div class="textbackColor">
+        <p class="text">L’industrie polonaise, malgré quelques réussites, a continué à rencontrer des problèmes qui ont
+          rendu difficiles les efforts entrepris pour la rendre concurrentielle. Les gros éditeurs n’étaient pas
+          particulièrement intéressés à l’idée<span class="point">...</span><span class="plus">d’investir dans d’obscurs
+            studios basés dans un pays qui ne possédait pas d’industrie vidéoludique quelques années auparavant. En plus
+            de cela, les développeurs avaient un goût étrange concernant les plateformes de jeu, problème
+            caractéristique des anciens pays de l’Union Soviétique. Dans les années ’80, durant l’âge d’or de Nintendo,
+            les joueurs polonais n’avaient nullement accès aux consoles de jeu</span></p>
+        <button onclick="LirePlusText(this)" class="hover-btn"><span class="test">Lire plus</span></button>
       </div>
-      
-      <div class="g-card">
-          <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
-          <p>Le succès de The Witcher 3 fut une véritable révolution – c’était le premier jeu polonais à égaler les plus gros succès de l’ouest, aussi bien en termes 
-            de revenus financiers que d’accueil critique...</p>
-          <a class="hover-btn" href="articleJeux1.html"><span>Lire plus</span></a>
-        </div>
-        
-        <div class="g-card">
-            <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
-            <p>Le succès de The Witcher 3 fut une véritable révolution – c’était le premier jeu polonais à égaler les plus gros succès de l’ouest, aussi bien en termes 
-              de revenus financiers que d’accueil critique...</p>
-            <a class="hover-btn" href="articleJeux1.htmls"><span>Lire plus</span></a>
-          </div>
+      <a href="articleJeux1.html" class="backColor">
+        <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
+      </a>
+    </div>
+  </div>
+  <div class="articleBox">
+    <div class="g-card">
+      <img src="decoration/Article2.png" alt="ImageArticle">
+      <div class="textbackColor">
+        <p>L'E3 2019 ouvrira bientôt ses portes, accueillant comme à chaque printemps les acteurs majeurs de l'industrie
+          vidéoludique du monde entier. La grande messe annuelle du jeu vidéo prendra à nouveau ses quartiers au
+          Convention Center de Los Angeles du 11 au 13 juin prochain. Si certains poids lourds comme PlayStation et
+          Electronic Arts<span class="point">...</span><span class="plus"> ne participeront pas au bal des conférences,
+            d'autres ont déjà confirmé leur présence On fait le point sur le planning de cette année.[MAJ] E3 2019 :
+            Dates, horaires, toutes les infos sur les conférencesComme chaque année, les différentes conférences des
+            éditeurs et constructeurs vont s'enchaîner aux quatre coins de Los Angeles quelques jours avant l'ouverture
+            du salon. L'équipe du site mettra en place un dispositif spécial pour assurer la couverture la plus
+            exhaustive possible de l'événement.</span></p>
+        <button onclick="LirePlusText(this)" class="hover-btn"><span class="test">Lire plus</span></button>
+      </div>
+      <a href="articleJeux2.html" class="backColor">
+        <h4 class="title">E3 2020 : Dates, horaires, toutes les infos sur les conférences</h4>
+      </a>
+    </div>
+  </div>
+  <div class="articleBox">
+    <div class="g-card">
+      <img src="decoration/Article1TheWticher.png" alt="ImageArticle">
+      <div class="textbackColor">
+        <p>Le succès de The Witcher 3 fut une véritable révolution – c’était le premier jeu polonais à égaler les plus
+          gros succès de l’ouest, aussi bien en termes
+          de revenus financiers que d’accueil critique...</p>
+        <a class="hover-btn"><span>Lire plus</span></a>
+      </div>
+      <a href="articleJeux1.html" class="backColor">
+        <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
+      </a>
+    </div>
+  </div>
+  <div class="articleBox">
+    <div class="g-card">
+      <img src="decoration/Article1TheWticher.png" alt="ImageArticle">
+      <div class="textbackColor">
+        <p>Le succès de The Witcher 3 fut une véritable révolution – c’était le premier jeu polonais à égaler les plus
+          gros succès de l’ouest, aussi bien en termes
+          de revenus financiers que d’accueil critique...</p>
+        <a class="hover-btn"><span>Lire plus</span></a>
+      </div>
+      <a href="articleJeux1.html" class="backColor">
+        <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
+      </a>
+    </div>
+  </div>
+  <div class="articleBox">
+    <div class="g-card">
+      <img src="decoration/Article1TheWticher.png" alt="ImageArticle">
+      <div class="textbackColor">
+        <p>Le succès de The Witcher 3 fut une véritable révolution – c’était le premier jeu polonais à égaler les plus
+          gros succès de l’ouest, aussi bien en termes
+          de revenus financiers que d’accueil critique...</p>
+        <a class="hover-btn"><span>Lire plus</span></a>
+      </div>
+      <a href="articleJeux1.html" class="backColor">
+        <h4 class="title">Pourquoi The Witcher devait être développé en Pologne ?</h4>
+      </a>
+    </div>
+  </div>
 
   <div class="stickyl">
     <div class="FootBar">
       <div class="floatright">
-        <a href="https://www.facebook.com/"><img src="Decoration/LogoFace.png" alt="Facebook"
-            style="width:20px;height:20px;"></a>
-
-        <a href="https://twitter.com/"><img src="Decoration/LogoTwitter.png" alt="Twitter"
-            style="width:20px;height:20px;"></a>
-        <a href="https://github.com/"><img src="Decoration/LogoGit.png" alt="GitHUB"
-            style="width:20px;height:20px;"></a>
+        <a href="https://www.facebook.com/" onmouseover="plusGrand(this)" onmouseout="plusPetit(this)"><img
+            class="imageRS" src="Decoration/LogoFace.png" alt="Facebook"></a>
+        <a href="https://twitter.com/" onmouseover="plusGrand(this)" onmouseout="plusPetit(this)"><img class="imageRS"
+            src="Decoration/LogoTwitter.png" alt="Twitter"></a>
+        <a href="https://github.com/" onmouseover="plusGrand(this)" onmouseout="plusPetit(this)"><img class="imageRS"
+            src="Decoration/LogoGit.png" alt="GitHUB"></a>
       </div>
     </div>
   </div>
+  <script src="Scripts/Nav.js"></script>
+  <script src="Scripts/Footer.js"></script>
+  <script src="Scripts/Article.js"></script>
 </body>
 
 </html>
