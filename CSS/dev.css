@@ -1,0 +1,49 @@
+.vignette {
+  border-radius: 100px;
+}
+
+.vignetteImage {
+  position: relative;
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+#zone-affichage {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  float: left;
+  margin: 5%;
+  border: solid 3px #333333;
+  border-radius: 30px;
+}
+
+.detail-studio {
+  display: none;
+  width: 700px;
+  height: 700px;
+  border: solid 1px black;
+}
+
+.studio-nom {
+  height: 10px;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.studio-description {
+  margin-left: 20%;
+  margin-top: 2%;
+  float: left;
+  position: absolute;
+}
+
+.studio-illustration {
+  float: left;
+  width: 300px;
+}

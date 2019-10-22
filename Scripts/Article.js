@@ -9,7 +9,6 @@ var button;
 button = document.getElementsByClassName("hover-btn");
 Array.from(button).forEach(function(elem) {
     elem.addEventListener("click", function LirePlusText(elem){
-        console.log(elem);
         let child = elem.currentTarget.firstElementChild;
         let text = elem.currentTarget.parentElement.firstElementChild;
         let parentFirstChild = elem.currentTarget.parentElement.firstElementChild;
