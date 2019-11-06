@@ -97,7 +97,7 @@ ul li ul li {
 .startRight{
   left:auto;
   right:0;
-  margin-right:-10px;
+  margin-right:10px;
 }  
 .Connection p{
   margin:10%;
