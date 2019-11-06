@@ -1,6 +1,8 @@
 .FormContact {
-  text-align: center;
-  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .FormContact textarea {
@@ -8,13 +10,12 @@
 }
 
 .FormContact fieldset {
-  margin-left: 35%;
+  text-align: center;
   width: 400px;
   background-color: #31395F;
 }
 
-.FormContact Input {
-  margin-left: 20%;
+.FormContact input {
   width: 230px;
 }
 
@@ -34,12 +35,14 @@
 input[type="submit"],
 input[type="password"],
 input[type="date"] {
-  display: block;
+  display: inline-flex ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #dropdownform input[type="text"] {
   text-align: center;
-  display: block;
 }
 
 .FormContact input[type="submit"] {
@@ -57,5 +60,4 @@ input[type="date"] {
 #message {
   font-size: 20px;
   text-align: center;
-  display: block;
 }
