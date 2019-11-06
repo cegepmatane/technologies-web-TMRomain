@@ -11,7 +11,7 @@
 
 .FormContact fieldset {
   text-align: center;
-  width: 400px;
+  min-width: 50%;
   background-color: #31395F;
 }
 
