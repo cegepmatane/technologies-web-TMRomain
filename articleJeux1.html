@@ -9,16 +9,40 @@
 </head>
 
 <body>
-  <nav class="sticky">
+<nav class="sticky">
     <div class="TopBar">
       <img class="logo" src="Decoration/LogoTemporaire1.png" alt="LogoTemporaire">
+      <!-- Cache l'ecran quand actif  -->
+      <div id="menuModal" class="modalMenu">
+      <!-- Hamburger Menu -->
+        <div class="container" id="hambMenu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="menu">
+        <li class="hambNav"><a class="topLink" href="index.html">Accueil</a></li>
+        <li class="hambNav" id="accordion" >Articles</li>
+        </ul>
+        <ul class="panel">
+            <li class="hambNav"><a class="topLink" href="studio.html">Studio</a></li>
+            <li class="hambNav" ><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
+            <li class="hambNav"> <a class="topLink" href="histoire.html">Histoire</a></li>
+        </ul>
+        <ul class="menu">
+        <li class="hambNav"><a class="topLink" href="blog.html">Blog</a></li>
+        <li class="hambNav"><a class="topLink" href="forum.html">Forum</a></li>
+        <li class="hambNav"><a class="topLink" href="contact.html">Contact</a></li>
+        <li class="hambNav"><a class="topLink" href="a_propos.html">À propos</a></li>
+      </ul>
+    </div>
       <ul>
         <li class="topNav"><a class="topLink" href="index.html"> Accueil</a></li>
         <li class="topNav"><a href="article.html" class="topLink">Articles</a>
           <ul class="dropdown">
-            <li><a class="topLink" href="dev.html">Développeur</a></li>
-            <li><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
-            <li> <a class="topLink" href="histoire.html">Histoire</a></li>
+            <li class="topNav"><a class="topLink" href="studio.html">Studio</a></li>
+            <li class="topNav" ><a class="topLink" href="jeux.html">Jeux Vidéo</a></li>
+            <li class="topNav"> <a class="topLink" href="histoire.html">Histoire</a></li>
           </ul>
         </li>
         <li class="topNav"><a class="topLink" href="blog.html">Blog</a></li>
@@ -47,6 +71,11 @@
       </ul>
     </div>
   </nav>
+  <div class="wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
   <br><br><br><br><br><br>
   <div class="article">
     <h1>Pourquoi The Witcher devait être développé en Pologne ?</h1>
@@ -72,7 +101,7 @@
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <p>L’industrie polonaise, malgré quelques réussites, a continué à rencontrer des problèmes qui ont rendu difficiles
+    <p class="texteArticle">L’industrie polonaise, malgré quelques réussites, a continué à rencontrer des problèmes qui ont rendu difficiles
       les efforts entrepris pour la rendre concurrentielle. Les gros éditeurs n’étaient pas particulièrement intéressés
       à l’idée d’investir dans d’obscurs studios basés dans un pays qui ne possédait pas d’industrie vidéoludique
       quelques années auparavant. En plus de cela, les développeurs avaient un goût étrange concernant les plateformes

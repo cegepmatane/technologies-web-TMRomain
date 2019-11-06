@@ -2,11 +2,11 @@
 @import url("CSS/form.css");
 @import url("CSS/article.css");
 @import url("CSS/nav.css");
-@import url("CSS/index.css");
 @import url("CSS/dev.css");
 @import url("CSS/lightbox.css");
 @import url("CSS/lightbox.min.css");
 @import url("CSS/jquery-ui.css");
+@import url("CSS/starsParallax.css");
 * {
   margin: 0px;
   padding: 0;
@@ -20,6 +20,7 @@
 
 
 .FootBar {
+  z-index: 100;
   position: fixed;
   left: 0;
   bottom: 0;

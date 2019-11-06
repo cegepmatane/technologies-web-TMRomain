@@ -13,10 +13,12 @@
   text-align: left;
 }
 .simple-table tbody td {
+  color :white;
   border: solid 1px #DDEEEE;
   padding: 10px;
 }
 .confTitre{
+  
   background-color: #495baa;
   border: solid 1px #495baa;
   color: white;

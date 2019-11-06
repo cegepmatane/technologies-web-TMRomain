@@ -3,7 +3,7 @@ for(let numero=0; numero < listeVignettes.length; numero++)
 {
     let vignette = listeVignettes[numero];
     vignette.addEventListener("mousedown", function () {
-        showVignette(this.id);
+        showVignette(vignette.id);
     });
 }   
 
