@@ -6,12 +6,18 @@
 }
 
 .FormContact textarea {
+  display: inline-flex ;
+  align-items: center;
+  justify-content: center;
   resize: none;
+  max-height: 200px;
+  max-width: 250px;
 }
 
 .FormContact fieldset {
   text-align: center;
-  min-width: 50%;
+  margin : 10%;
+  padding:10%;
   background-color: #31395F;
 }
 
@@ -60,4 +66,20 @@ input[type="date"] {
 #message {
   font-size: 20px;
   text-align: center;
+}
+
+#box {
+  position: absolute;
+  width: 300px;
+  margin-left: 42.5%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#box p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }

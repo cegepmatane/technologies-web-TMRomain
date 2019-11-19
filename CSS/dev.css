@@ -13,12 +13,10 @@
 }
 
 #zone-affichage {
+  display:inline-block;
   background-color: white;
   width: 80%;
-  height: auto;
-  float: left;
   margin: 5%;
-  border: solid 3px #333333;
   border-radius: 30px;
 }
 
@@ -46,5 +44,5 @@
 
 .studio-illustration {
   float: left;
-  width: 300px;
+  width: 20%;
 }

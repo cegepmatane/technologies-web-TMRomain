@@ -237,7 +237,7 @@ li:hover .ArrowList{
 /* Pannel ouvert a l'appuis de l'accordion */
 .panel {
   padding: 0 18px;
-  display: none;
+  display: flex;
   overflow: hidden;
   flex-direction: column;
   background: #31395F;

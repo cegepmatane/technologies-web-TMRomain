@@ -77,15 +77,19 @@
       <div id="stars3"></div>
     </div>
   <br><br><br><br><br><br><br><br>
+    <div id="box">
+      <p id="changingText">Texte qui change</p>
+  </div>
+
   <div class="FormContact">
     <form id="answers" onsubmit="return validerCompte();">
       <fieldset>
-        <legend>Nous contacter :</legend>
+        <legend>Nous contacter</legend>
         <p><label for="sujet">Titre de votre sujet :</label></p>
         <p><input type="text" name="sujet" id="sujet" autofocus></p>
         <p><label for="emailCompte">Votre email : </label></p>
-        <p><input type="text" onfocus="onFocusEmail()" onfocusout="outFocusEmail(this)" name="emailCompte"
-            id="emailCompte" placeholder="exemple@exemple.exemple"></p>
+        <p><input class="popUp" type="text" onfocus="onFocusEmail()" onfocusout="outFocusEmail(this)" name="emailCompte"
+            id="emailCompte" title="Ici vous devais entrer votre prenom" placeholder="exemple@exemple.exemple"></p>
         <p><label>Votre type de problémes : </label></p>
         <select>
           <option value="site">Site Web</option>
@@ -94,12 +98,13 @@
           <option value="aucun">Aucun</option>
         </select>
         <p><label for="sujettxt">Votre Sujet :</label></p>
-          ​<p><textarea id="sujettxt" rows="4" cols="50"></textarea></p>
+        <p><textarea class="popUp" id="sujettxt" title="Specifier votre problémes"  rows="4" cols="50"></textarea></p>
         <input type="submit" value="Envoyer">
       </fieldset>
     </form>
     <div id="message"></div>
   </div>
+
   <div class="stickyl">
     <div class="FootBar">
       <div class="floatright">
@@ -111,8 +116,9 @@
       </div>
     </div>
   </div>
-    <script src="Scripts/Nav.js"></script>
+  <script src="Scripts/Nav.js"></script>
   <script src="Scripts/Footer.js"></script>
+  <script src="Scripts/form.js"></script>
 </body>
 
 </html>

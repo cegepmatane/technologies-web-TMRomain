@@ -9,7 +9,8 @@ for(let numero=0; numero < listeVignettes.length; numero++)
 
 
 function showVignette(studio){
+    console.log(document.getElementById('detail-' + studio));
     detail = document.getElementById('detail-' + studio);
-    zoneAffichage = document.getElementById('zone-affichage');
+    let zoneAffichage = document.getElementById('zone-affichage');
     zoneAffichage.innerHTML = detail.innerHTML;
 }

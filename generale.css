@@ -97,3 +97,12 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+.example-image{
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  max-width: 225px;
+  overflow-x: scroll;
+}

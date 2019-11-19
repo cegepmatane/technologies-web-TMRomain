@@ -7,6 +7,8 @@ var acc = document.getElementById("accordion");
 var i;
 let isOpen = false ;
 let isMatch = false;
+var panel = document.getElementById("panel");
+panel.style.display = "none";
 verifyScreen(x); // Call listener function at run time
 x.addListener(verifyScreen); // Attach listener function on state changes
 
@@ -66,9 +68,8 @@ function startLoad() {
     this.classList.toggle("active");
 
     /* Switch entre active et non active */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "flex") {
-      console.log("test");
+
+    if (panel.style.display == "flex") {
       panel.style.display = "none";
     } else {
       panel.style.display = "flex";
