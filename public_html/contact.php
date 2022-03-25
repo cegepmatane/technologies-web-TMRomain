@@ -82,14 +82,14 @@
   </div>
 
   <div class="FormContact">
-    <form id="answers" onsubmit="return validerCompte();">
+    <form id="answers" onsubmit="envoieContact();">
       <fieldset>
         <legend>Nous contacter</legend>
         <p><label for="sujet">Titre de votre sujet :</label></p>
         <p><input type="text" name="sujet" id="sujet" autofocus></p>
-        <p><label for="emailCompte">Votre email : </label></p>
+        <!-- <p><label for="emailCompte">Votre email : </label></p>
         <p><input class="popUp" type="text" onfocus="onFocusEmail()" onfocusout="outFocusEmail(this)" name="emailCompte"
-            id="emailCompte" title="Ici vous devais entrer votre prenom" placeholder="exemple@exemple.exemple"></p>
+            id="emailCompte" title="Ici vous devais entrer votre prenom" placeholder="exemple@exemple.exemple"></p> -->
         <p><label>Votre type de problémes : </label></p>
         <select>
           <option value="site">Site Web</option>
@@ -119,6 +119,7 @@
   <script src="Scripts/Nav.js"></script>
   <script src="Scripts/Footer.js"></script>
   <script src="Scripts/form.js"></script>
+  <script src="Scripts/Contact.js"></script>
 </body>
 
 </html>
