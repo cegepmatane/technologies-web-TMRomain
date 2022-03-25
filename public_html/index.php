@@ -12,12 +12,11 @@ require 'includes/topnav.php';
 </head>
 
 <body>
- 
   <div class="wrapper">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-    </div>
+  </div>
   <br><br><br><br>
   <div class="center">
     <h1>Le site qui traite de tous les domaines du jeu vidéo</h1>
