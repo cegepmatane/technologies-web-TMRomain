@@ -7,7 +7,7 @@ require 'includes/topnav.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="generale.css">
+  <link rel="stylesheet" type="text/css" href="generale.css<?php echo '?'.mt_rand(); ?>">
   <title>GameDepth</title>
 </head>
 
@@ -23,23 +23,23 @@ require 'includes/topnav.php';
   </div>
 
   <div class="FormContact">
-    <form id="answers" onsubmit="envoieContact();">
-      <fieldset>
+    <form id="answers">
+      <fieldset id="contactField">
         <legend>Nous contacter</legend>
-        <p><label for="sujet">Titre de votre sujet :</label></p>
-        <p><input type="text" name="sujet" id="sujet" autofocus></p>
+        <!-- <p><label for="sujet">Titre de votre sujet :</label></p>
+        <p><input type="text" name="sujet" id="sujet" autofocus></p> -->
         <!-- <p><label for="emailCompte">Votre email : </label></p>
         <p><input class="popUp" type="text" onfocus="onFocusEmail()" onfocusout="outFocusEmail(this)" name="emailCompte"
             id="emailCompte" title="Ici vous devais entrer votre prenom" placeholder="exemple@exemple.exemple"></p> -->
         <p><label>Votre type de problémes : </label></p>
-        <select>
-          <option value="site">Site Web</option>
-          <option value="article">Aticles</option>
-          <option value="compte">Compte</option>
-          <option value="aucun">Aucun</option>
+        <select id="problemeSelect" >
+          <option value="Site Web">Site Web</option>
+          <option value="Article">Aticles</option>
+          <option value="Compte">Compte</option>
+          <option value="Autres">Autres</option>
         </select>
         <p><label for="sujettxt">Votre Sujet :</label></p>
-        <p><textarea class="popUp" id="sujettxt" title="Specifier votre problémes"  rows="4" cols="50"></textarea></p>
+        <p><textarea class="popUp" id="sujettxt" title="Specifier votre problémes"  rows="4" cols="20"></textarea></p>
         <input type="submit" value="Envoyer">
       </fieldset>
     </form>
