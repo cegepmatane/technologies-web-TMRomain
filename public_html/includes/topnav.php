@@ -1,4 +1,5 @@
 <?php
+require_once "Serveur/MembreDAO.php";
 echo '
 <nav class="sticky">
     <div class="TopBar">

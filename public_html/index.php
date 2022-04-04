@@ -21,10 +21,10 @@ require 'includes/topnav.php';
   <div class="center">
     <h1>Le site qui traite de tous les domaines du jeu vidéo</h1>
     <p>Et bien plus sur notre forum lorsque vous êtes connecter</p>
-    <a href="ccompte.html" class="button">Connectez-Vous</a>
+    <a href="ccompte.php" class="button">Connectez-Vous</a>
 
     <br><br><br><br>
-    <h1>Temps avant l'E3 2019 </h1>
+    <h1>Temps avant l'E3 2022 </h1>
     <p id="countdown"></p>
   </div>
   <div class="stickyl">

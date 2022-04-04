@@ -1,5 +1,19 @@
 <?php
 require 'includes/topnav.php';
+$membreAutentifier = false;
+$membreInscription = false;
+if(isset($_POST["action-autentification"])){
+    $membre["pseudo"] = $_POST["pseudo"];
+    $membre["mdp"]  = $_POST["mdp"];
+    $membre = membreDAO::autentifier($membre);
+    if (isset($membre["id"])){
+        $membreAutentifier = true;
+    }
+    else {
+        $membreAutentifier = false;
+        echo "Mauvais mot de passe";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,17 +33,16 @@ require 'includes/topnav.php';
     </div>
   <br><br><br><br><br><br><br><br>
   <div class="FormContact">
-    <form id="answers" onsubmit="return validerCompte();">
+    <form id="answers" method="POST" action="membre.php">
       <fieldset>
         <legend>Se Connecter :</legend>
-        <p><label for="emailCompte">Votre email : </label>
-          <input type="text" onfocus="onFocusEmail()" onfocusout="outFocusEmail(this)" name="emailCompte"
-            id="emailCompte" placeholder="exemple@exemple.exemple"></p>
+        <p><label for="pseudo">Votre Pseudo :</label></p>
+            <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="pseudo" id="pseudo"></p>
         <p><img src="Decoration/lock.png" alt="Membre" style="width:13px;height:13px;">
-          <label for="passwordcc">Votre mots de passe :</label>
-          <input type="password" id="passwordcc" name="passwordcc" minlength="8" required></p>
+          <label for="mdp">Votre mots de passe :</label>
+          <input type="password" id="mdp" name="mdp" minlength="8" required></p>
         <br>
-        <p><input type="submit" value="Envoyer"></p>
+        <p><input type="submit" name="action-autentification" value="Envoyer"></p>
       </fieldset>
     </form>
   </div>

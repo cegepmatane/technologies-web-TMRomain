@@ -12,11 +12,16 @@
   max-height: 200px;
   max-width: 250px;
 }
+#moreInfo{
+  color: white;
 
+}
+#answers{
+  width: 25%;
+}
 .FormContact fieldset {
   text-align: center;
   width: 100%;
-  padding:10%;
   background-color: #31395F;
 }
 

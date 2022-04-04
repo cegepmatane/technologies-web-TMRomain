@@ -1,5 +1,15 @@
 ﻿<?php
 require 'includes/topnav.php';
+if(isset($_POST['test']))
+{
+  $membre["prenom"] = $_POST["prenom"];
+  $membre["date_de_naissance"] = $_POST["date"];
+  $membre["pseudo"] = $_POST["pseudo"];
+  $membre["mail"] = $_POST["emailCompte"];
+  $membre["mdp"] = $_POST["passwordcc"];
+  MembreDAO::inscription($membre);
+  header("Location: membre.php");
+} 
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,7 +28,7 @@ require 'includes/topnav.php';
           <div id="stars3"></div>
   <br><br><br><br><br><br><br><br>
   <div class="FormContact">
-    <form id="answers" method="get" onsubmit="return validerCompte();" action="connexion.html">
+    <form id="answers" method="POST" action="ccompte.php">
       <fieldset>
         <legend>Crée un Compte :</legend>
         <div id="erreur"></div>
@@ -32,14 +42,14 @@ require 'includes/topnav.php';
             <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="pseudo" id="pseudo"></p>
         <p><img src="Decoration/emailIcon.png" alt="Membre" style="width:13px;height:13px;"></p>
           <p> <label id="emailComptetxt" for="emailCompte">Votre email : </label></p>
-          <p><input onfocus="onFocusEmail()" onclick="    turnBlue(this)" onfocusout="unFocus(this),outFocusEmail(this)"
+          <p><input onfocus="onFocusEmail()" onclick="turnBlue(this)" onfocusout="unFocus(this),outFocusEmail(this)"
             type="text" name="emailCompte" id="emailCompte"></p>
         <p><img src="Decoration/lock.png" alt="Membre" style="width:13px;height:13px;"></p>
           <p><label for="passwordcc">Votre mots de passe :</label></p>
             <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="password" id="passwordcc" name="passwordcc"
             minlength="8" required></p>
         <br>
-        <p><input type="submit" value="Envoyer"></p>
+        <p><input type="submit" name="test" value="Envoyer"></p>
       </fieldset>
       <div id="message"></div>
     </form>
@@ -57,6 +67,7 @@ require 'includes/topnav.php';
   </div>
   <script src="Scripts/Nav.js"></script>
   <script src="Scripts/Footer.js"></script>
+  <script src="Scripts/CreationCompte.js"></script>
   <script src="Scripts/CreateAccount.js"></script>
       </section>
 </body>

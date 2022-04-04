@@ -41,6 +41,7 @@ require 'includes/topnav.php';
         <p><label for="sujettxt">Votre Sujet :</label></p>
         <p><textarea class="popUp" id="sujettxt" title="Specifier votre problémes"  rows="4" cols="20"></textarea></p>
         <input type="submit" value="Envoyer">
+        <p id="moreInfo">Ou contacter nous a : romainover51@gmail.com</p>
       </fieldset>
     </form>
     <div id="message"></div>
