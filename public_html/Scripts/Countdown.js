@@ -1,5 +1,5 @@
 // Date jusqu'a ou compter
-var countDownDate = new Date("Jun 9, 2020 15:37:25").getTime();
+var countDownDate = new Date("Jun 9, 2022 15:37:25").getTime();
 
 // Mettre a jour le temps 
 var x = setInterval(function() {
