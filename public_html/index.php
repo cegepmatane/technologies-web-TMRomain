@@ -20,8 +20,11 @@ require 'includes/topnav.php';
   <br><br><br><br>
   <div class="center">
     <h1>Le site qui traite de tous les domaines du jeu vidéo</h1>
-    <p>Et bien plus sur notre forum lorsque vous êtes connecter</p>
-    <a href="ccompte.php" class="button">Connectez-Vous</a>
+    <?php 
+    if(!isset($_SESSION["autentifier"]) || !$_SESSION["autentifier"]){
+      echo'
+      <p>Et bien plus sur notre forum lorsque vous êtes connecter</p>
+    <a href="ccompte.php" class="button">Connectez-Vous</a>';}?>
 
     <br><br><br><br>
     <h1>Temps avant l'E3 2022 </h1>

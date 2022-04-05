@@ -1,16 +1,5 @@
 <?php
 require 'includes/topnav.php';
-if(isset($_POST["action-poste"]) && $_POST["titre"] != null){
-  $poste["titre"] = $_POST["titre"];
-  $poste["description"]  = $_POST["description"];
-  $poste["date"]  =date("Y/m/d");
-  $poste["utilisateur"]  = $_SESSION["pseudo"];
-  $poste = ForumDAO::ajouter($poste);
-  header("Location:forum.php");
-die();
-}
-$listePoste = null;
-$listePoste = ForumDAO::listePoste();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,23 +24,21 @@ $listePoste = ForumDAO::listePoste();
   <h1>Forum</h1>
   <br> <br> <br>
   <p>Posibilité de se connecter et de discuter avec des gens passionner</p>
-  <a href="membre.php" class="button">Connectez-Vous</a>';}
-  else{
+  <a href="membre.php" class="button">Connectez-Vous</a>';}else{
     echo'
-    <p>Creer un poste</p>
-    <a href="forumCR.php" class="button">Creer</a></br>
+    <div class="FormContact">
+    <form id="answers" method="POST" action="forum.php">
+      <fieldset>
+        <legend>Votre poste :</legend>
+        <p><label for="titre">Titre du poste: </label></p>
+            <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="titre" id="titre"></p>
+        <p><label for="description">Description du poste: </label></p>
+            <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="description" id="description" size="50"></p>
+        <br>
+        <p><input type="submit" name="action-poste" value="Envoyer"></p>
+      </fieldset>
+    </form>
     ';
-    foreach ($listePoste as $key => $poste) {
-      echo'<div class="posteDiv">';
-      echo'<div class="poste">';
-      echo '<h1>Titre:'.$poste["titre"].'</h1>';
-      echo '<h2></br>'.$poste["description"].'</h2>';
-      echo '</br></br></br><p>'.$poste["date"].'</p>';
-      echo '</br><p>'.$poste["utilisateur"].'</p>';
-      echo'</div>';
-      echo'</div>';
-
-    }
   }
   ?>
   <div class="stickyl">

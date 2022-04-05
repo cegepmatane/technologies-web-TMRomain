@@ -7,6 +7,7 @@
 @import url("CSS/lightbox.min.css");
 @import url("CSS/jquery-ui.css");
 @import url("CSS/starsParallax.css");
+@import url("CSS/tableau.css");
 * {
   margin: 0px;
   padding: 0;
@@ -17,8 +18,22 @@
   bottom: 0;
   width: 100%;
 }
-
-
+.posteDiv{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.poste{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 70%;
+  min-height:10%;
+  background-color: #495baa;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .FootBar {
   z-index: 100;
   position: fixed;

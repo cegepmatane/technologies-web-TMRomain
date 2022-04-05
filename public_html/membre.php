@@ -1,5 +1,5 @@
 <?php
-require 'includes/topnav.php';
+require_once "Serveur/MembreDAO.php";
 $membreAutentifier = false;
 $membreInscription = false;
 if(isset($_POST["action-autentification"])){
@@ -13,7 +13,25 @@ if(isset($_POST["action-autentification"])){
         $membreAutentifier = false;
         echo "Mauvais mot de passe";
     }
+
+if($membreAutentifier){
+  if (session_status() === PHP_SESSION_NONE) {
+  session_start();
 }
+  $_SESSION["autentifier"]=true;
+  $_SESSION["pseudo"]=$membre["pseudo"];
+  $_SESSION["id"]=$membre["id"];
+}
+}
+if(isset($_POST["action-deconexion"])){
+  if (!session_status() === PHP_SESSION_NONE) {
+  unset($_SESSION['autentifier']);
+  $_SESSION["autentifier"]=false;
+  $_SESSION["pseudonyme"]= null;
+  $_SESSION["id"]= null;
+}
+}
+require 'includes/topnav.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -32,6 +50,9 @@ if(isset($_POST["action-autentification"])){
       <div id="stars3"></div>
     </div>
   <br><br><br><br><br><br><br><br>
+  <?php 
+    if(!isset($_SESSION["autentifier"]) || !$_SESSION["autentifier"]){
+      echo'
   <div class="FormContact">
     <form id="answers" method="POST" action="membre.php">
       <fieldset>
@@ -45,7 +66,15 @@ if(isset($_POST["action-autentification"])){
         <p><input type="submit" name="action-autentification" value="Envoyer"></p>
       </fieldset>
     </form>
-  </div>
+  </div>';}else{
+    echo'<p>Vous ete connecter</p>';
+    echo $_SESSION["pseudo"];
+    echo' <form id="answers" method="POST" action="membre.php">
+    <div class="aligncenter">
+      <p><input class="buttonConnexion" type="submit" name="action-deconexion" value="Deconnecter"></p>
+    </div>';
+  }   
+  ?>
   <div id="message"></div>
   <div class="stickyl">
     <div class="FootBar">
@@ -60,7 +89,7 @@ if(isset($_POST["action-autentification"])){
   </div>
     <script src="Scripts/Nav.js"></script>
   <script src="Scripts/Footer.js"></script>
-  <script src="Scripts/Countdown.js"></script>
+
 </body>
 
 </html>
