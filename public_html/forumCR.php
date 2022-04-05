@@ -35,7 +35,7 @@ require 'includes/topnav.php';
         <p><label for="description">Description du poste: </label></p>
             <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="description" id="description" size="50"></p>
         <br>
-        <p><input type="submit" name="action-autentification" value="Envoyer"></p>
+        <p><input type="submit" name="action-poste" value="Envoyer"></p>
       </fieldset>
     </form>
     ';

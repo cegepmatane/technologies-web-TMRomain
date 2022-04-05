@@ -1,6 +1,6 @@
 <?php
 require_once "Serveur/MembreDAO.php";
-require_once "Serveur/ForumDAO.php";  
+require_once "Serveur/ForumDAO.php";
 if (session_status() === PHP_SESSION_NONE) {
   session_start();
 }
@@ -31,7 +31,7 @@ if(isset($_POST["action-deconexion"])){
   if (session_status() != PHP_SESSION_NONE) {
     unset($_SESSION['autentifier']);
     $_SESSION["autentifier"]=false;
-    $_SESSION["pseudonyme"]= null;
+    $_SESSION["pseudo"]= null;
     $_SESSION["id"]= null;
   }
 }

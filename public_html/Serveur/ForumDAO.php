@@ -12,5 +12,12 @@ class ForumDAO{
         $requeteAjout->bindParam(':date', $poste['date'], PDO::PARAM_STR);
         return $requeteAjout-> execute();
     }
+    public static function listePoste(){
+        $MESSAGE_SQL_LISTE_POSTE = "SELECT id, titre ,description,utilisateur ,date FROM `poste` ";
+        $requeteListeAjout = BaseDeDonnees::getConnexion() -> prepare($MESSAGE_SQL_LISTE_POSTE); 
+        $requeteListeAjout-> execute();
+        return $requeteListeAjout-> fetchAll();
+    }
 }
+
 ?>
