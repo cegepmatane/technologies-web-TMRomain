@@ -26,8 +26,18 @@ require 'includes/topnav.php';
   <p>Posibilité de se connecter et de discuter avec des gens passionner</p>
   <a href="membre.php" class="button">Connectez-Vous</a>';}else{
     echo'
-    <p>Creer un poste</p>
-    <a href="forumCR.php" class="button">Creer</a>
+    <div class="FormContact">
+    <form id="answers" method="POST" action="forum.php">
+      <fieldset>
+        <legend>Votre poste :</legend>
+        <p><label for="titre">Titre du poste: </label></p>
+            <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="titre" id="titre"></p>
+        <p><label for="description">Description du poste: </label></p>
+            <p><input onclick="turnBlue(this)" onfocusout="unFocus(this)" type="text" name="description" id="description" size="50"></p>
+        <br>
+        <p><input type="submit" name="action-autentification" value="Envoyer"></p>
+      </fieldset>
+    </form>
     ';
   }
   ?>

@@ -1,5 +1,6 @@
 <?php
 require_once "Serveur/MembreDAO.php";
+require_once "Serveur/ForumDAO.php";  
 if (session_status() === PHP_SESSION_NONE) {
   session_start();
 }
